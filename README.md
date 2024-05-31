@@ -3,7 +3,14 @@ Run a KVM Virtual Machine in Pterodactyl/Jexactyl, All for Free, Screw Lumen VM.
 
 ## Overview
 
-This Egg allows you to set up and manage a KVM Server within your Pterodactyl panel. It provides a convenient way to deploy and manage KVM instances with ease.
+This Egg allows you to set up and manage a KVM Server within your Pterodactyl/Jexactyl panel. It provides a convenient way to deploy and manage KVM instances with ease.
+
+
+## ✨ Features
+
+- Root
+- Supports lots of linux os(s)
+- Free
 
 ## Supported Operating Systems
 
@@ -28,5 +35,11 @@ This Egg allows you to set up and manage a KVM Server within your Pterodactyl pa
 2. Voila, You got the egg
 Feel free to customize the Egg settings and configurations to suit your requirements.
 
+## How to add Systemctl (Fix systemctl error)
+
+1. in your terminal, do `apt install curl -y`
+2. Now do `curl -o /bin/systemctl https://raw.githubusercontent.com/gdraheim/docker-systemctl-replacement/master/files/docker/systemctl3.py`
+3. Voila, its fixed
+   
 ## Contributing
 Contributions are welcome. If you have any suggestions, improvements, or bug fixes, feel free to submit a pull request.
