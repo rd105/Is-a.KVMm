@@ -11,6 +11,7 @@ This Egg allows you to set up and manage a KVM Server within your Pterodactyl/Je
 - Root
 - Supports lots of linux os(s)
 - Free
+- Mirrors system processes (so you could program a sh script in your system to kill mining software)
 
 ## Supported Operating Systems
 
