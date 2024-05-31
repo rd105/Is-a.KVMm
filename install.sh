@@ -10,7 +10,7 @@ ROOTFS_DIR=/home/container
 export PATH=$PATH:~/.local/usr/bin
 
 
-PROOT_VERSION="5.3.0"
+PROOT_VERSION="5.4.0"
 
 ARCH=$(uname -m)
 
@@ -361,17 +361,12 @@ if [ ! -e "$ROOTFS_DIR/.installed" ]; then
     chmod 755 "$ROOTFS_DIR/usr/local/bin/proot"
 fi
 
-# Clean-up after installation complete & finish up.
 if [ ! -e "$ROOTFS_DIR/.installed" ]; then
-    # Add DNS Resolver nameservers to resolv.conf.
     printf "nameserver 1.1.1.1\nnameserver 1.0.0.1" > "${ROOTFS_DIR}/etc/resolv.conf"
-    # Wipe the files we downloaded into /tmp previously.
     rm -rf $ROOTFS_DIR/rootfs.tar.xz /tmp/sbin
-    # Create .installed to later check whether OS is installed.
     touch "$ROOTFS_DIR/.installed"
 fi
 
-# Get all ports from vps.config
 port_args=""
 while read line; do
     case "$line" in
@@ -381,8 +376,6 @@ while read line; do
     esac
 done < "$ROOTFS_DIR/vps.config"
 
-# This command starts PRoot and binds several important directories
-# from the host file system to our special root file system.
 "$ROOTFS_DIR/usr/local/bin/proot" \
 --rootfs="${ROOTFS_DIR}" \
 -0 -w "/root" -b /dev -b /sys -b /proc -b /etc/resolv.conf $port_args --kill-on-exit \
