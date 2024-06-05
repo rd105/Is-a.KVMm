@@ -26,10 +26,12 @@ fi
 if [ ! -e "$ROOTFS_DIR/.installed" ]; then
 
   printf "\033c"
-  echo "${PURPLE}   ____                   __ __ _   __ __  ___${NC}"
-  echo "${PURPLE}  /  _/___ ____ ___ _    / //_/| | / //  |/  /${NC}"
-  echo "${PURPLE} _/ / (_-</___// _ `/_  / ,<   | |/ // /|_/ / ${NC}"
-  echo "${PURPLE}/___//___/     \_,_/(_)/_/|_|  |___//_/  /_/  ${NC}"
+  echo "${PURPLE}    _                    __ ___    ____  ___  ${NC}"
+  echo "${PURPLE}   (_)____      ____ _  / //_/ |  / /  |/  /  ${NC}"
+  echo "${PURPLE}   / / ___/_____/ __ `/ / ,<  | | / / /|_/ /  ${NC}"
+  echo "${PURPLE} / (__  )_____/ /_/ / / /| | | |/ / /  / /    ${NC}"
+  echo "${PURPLE}/_/____/      \__,_(_)_/ |_| |___/_/  /_/     ${NC}"
+  echo "${PURPLE}                                           v2 ${NC}"
   echo "${PURPLE}                                              ${NC}"
   echo "${GREEN}Powered By Is-a.space${NC}"  
   echo ""
