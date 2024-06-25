@@ -32,7 +32,7 @@ if [ ! -e "$ROOTFS_DIR/.installed" ]; then
   echo "${PURPLE}██║╚════██║╚════╝██╔══██║   ██╔═██╗ ╚██╗ ██╔╝██║╚██╔╝██║${NC}"
   echo "${PURPLE}██║███████║      ██║  ██║██╗██║  ██╗ ╚████╔╝ ██║ ╚═╝ ██║${NC}"
   echo "${PURPLE}╚═╝╚══════╝      ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝  ╚═══╝  ╚═╝     ╚═╝${NC}"
-  echo "${GREEN}Powered By Is-a.space${NC}"  
+  echo "${GREEN}Made By discord.gg/is-a-space${NC}"  
   echo ""
   echo "${YELLOW}Please choose your distro${NC}"
   echo ""  
