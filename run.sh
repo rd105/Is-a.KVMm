@@ -20,10 +20,10 @@ printf "${PURPLE}██║███████║      ██║  ██║█�
 printf "${PURPLE}╚═╝╚══════╝      ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝  ╚═══╝  ╚═╝     ╚═╝${NC}"
 printf "${PURPLE}                                                        ${NC}"
 printf "                                                                                               \n"
-printf "root@is-a.KVM:${DIR}#                                                                             \n"
+printf "root@instance:${DIR}#                                                                             \n"
 
 run_cmd() {
-    read -p "root@is-a.KVM:$DIR# " CMD
+    read -p "root@instance:$DIR# " CMD
     eval "$CMD"
 
     # Update DIR after executing command
@@ -32,12 +32,12 @@ run_cmd() {
         DIR="~${PWD#/root}"
     fi
     
-    printf "root@is-a.KVM:$DIR# \n"
+    printf "root@instance:$DIR# \n"
     run_user_cmd
 }
 
 run_user_cmd() {
-    read -p "user@is-a.KVM:$DIR# " CMD2
+    read -p "user@instance:$DIR# " CMD2
     eval "$CMD2"
 
     # Update DIR after executing command
@@ -46,7 +46,7 @@ run_user_cmd() {
         DIR="~${PWD#/root}"
     fi
     
-    printf "root@is-a.KVM:$DIR# \n"
+    printf "root@instance:$DIR# \n"
     run_cmd
 }
 
