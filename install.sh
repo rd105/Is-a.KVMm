@@ -32,8 +32,6 @@ if [ ! -e "$ROOTFS_DIR/.installed" ]; then
   echo "${PURPLE}██║╚════██║╚════╝██╔══██║   ██╔═██╗ ╚██╗ ██╔╝██║╚██╔╝██║${NC}"
   echo "${PURPLE}██║███████║      ██║  ██║██╗██║  ██╗ ╚████╔╝ ██║ ╚═╝ ██║${NC}"
   echo "${PURPLE}╚═╝╚══════╝      ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝  ╚═══╝  ╚═╝     ╚═╝${NC}"
-  echo "${PURPLE}                                                      v2${NC}"
-  echo "${PURPLE}                                                        ${NC}"
   echo "${GREEN}Powered By Is-a.space${NC}"  
   echo ""
   echo "${YELLOW}Please choose your distro${NC}"
