@@ -14,5 +14,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: is-a.kvm
+    - name: is-a.kvmm
       run: docker build . --file Dockerfile --tag is-a.kvm:$(date +%s)
