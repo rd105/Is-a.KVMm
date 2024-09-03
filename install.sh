@@ -37,7 +37,7 @@ if [ ! -e "$ROOTFS_DIR/.installed" ]; then
   echo "${YELLOW}Please choose your distro${NC}"
   echo ""  
   echo "* [1] Debian                                                                                   "
-  echo "* [2] Ubuntu                                                                                   "
+  echo "* [2] Ubuntu()                                                                                   "
   echo "* [3] Void Linux                                                                               "
   echo "* [4] Alpine Linux (Bleeding Edge)                                                                     "
   echo "* [5] CentOS                                                                                   "
